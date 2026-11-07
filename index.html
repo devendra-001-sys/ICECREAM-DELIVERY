@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status - Ice Cream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PAGE 1: ICE CREAM BAIT PAGE -->
+    <div id="page-1" class="card-container">
+        <div class="ice-cream-icon">🍦</div>
+        <h2>Ice Cream Delivery Status</h2>
+        <div class="status-box">
+            <p class="status-text">Status: <span>Delayed due to long distance</span></p>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+        <button onclick="nextPage(1, 2)">Resolve Order / Fix It</button>
+    </div>
+
+    <!-- PAGE 2: THE TIMELINE & MEMORY PAGE -->
+    <div id="page-2" class="card-container hide">
+        <h2 class="section-title">Order Resolved! ✨</h2>
+        <p class="sub-text">Ice cream toh jab milenge tab haath se hi khilaunga... Par abhi ke liye, order details check karo:</p>
+        
+        <div class="timeline">
+            <div class="timeline-item"><strong>Day 1:</strong> Started talking (Just trying to become friends)</div>
+            <div class="timeline-item"><strong>Day 6:</strong> continuous chat without stopping! 🔋</div>
+            <div class="timeline-item"><strong>Day 17:</strong> Sarcastic faces, fever check, and a direct threat: <em>"patt jao"</em></div>
+        </div>
+
+        <button onclick="nextPage(2, 3)">Next Page ➡️</button>
+    </div>
+
+    <!-- PAGE 3: THE HEARTTOUCHING QUOTE PAGE (New Add-on) -->
+    <div id="page-3" class="card-container hide">
+        <div class="quote-icon">✨</div>
+        <div class="quote-box">
+            <p class="main-quote">"Distance means nothing when someone means everything."</p>
+            <p class="hindi-quote">"Kuch log door reh kar bhi dil ke itne paas hote hain, ki unki baatein hi poore din ki thakaan door kar deti hain."</p>
+        </div>
+        <p class="sub-text">From continuous 12-hour chats to non-stop laughter, you've slowly become my absolute favorite routine... 🤍</p>
+        <button onclick="nextPage(3, 4)">One Last Thing... ➡️</button>
+    </div>
+
+    <!-- PAGE 4: THE FINAL PROPOSAL PAGE -->
+    <div id="page-4" class="card-container hide">
+        <div class="question-container">
+            <h3>Toh ab jab main poori tarah patt chuka hoon, aur tumne pehle hi 'Yes' bol diya hai... 😉</h3>
+            <h1 class="proposal-headline">Will you permanently shift into my heart? <br><span>Happy Diwali, be mine forever? ❤️</span></h1>
+        </div>
+
+        <!-- INTERACTIVE BUTTONS -->
+        <div class="btn-group">
+            <button id="yes-btn" onclick="sayYes()">Yes, i want to be yours! 🤝</button>
+            <button id="no-btn">No</button>
+        </div>
+        
+        <div id="success-msg" class="hide-msg">Smart choice! Now text him right away! 🎉✨</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
